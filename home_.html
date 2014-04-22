@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="ico/favicon.ico">
+
+    <title>Jumbotron Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/tiptoc.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+      #cat_options button {
+      	text-align: left;
+      }
+
+      @media(min-width: 500px){
+      	.mobileFirst_xs{
+      		width: 100
+      	}
+      	.mobileFirst_xs input{
+      		width: 100%
+      	}
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/logic.js"></script>
+    <script src="http://174.129.225.176/socket.io/socket.io.js"></script>
+    
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Hello, world!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      
+
+      <div id="formTip">
+      	<div class="row-fluid">
+      		<div class="col-md-12">
+      			<fieldset>
+      				<legend>Descripción</legend>
+  					<textarea style="width:100%;" id="description"></textarea>
+  					<input id="mic" onwebkitspeechchange="transcribe(this.value)" x-webkit-speech>
+      			</fieldset>
+      		</div>
+      	</div>
+      	<div class="row-fluid">
+      		<div class="col-md-12" style="font-size: 20px;">
+            <input id="photo" style="display:none" type="file" accept="image/*" capture="camera">
+				    <a href="javascript:void(1)" onclick="takePhoto()">
+              <span class="glyphicon glyphicon-camera"></span>
+            </a>
+            <input id="video" style="display:none" type="file" accept="video/*" capture="camcorder">
+            <a href="javascript:void(1)" onclick="takeVideo()">
+    				  <span class="glyphicon glyphicon-facetime-video"></span>
+            </a>
+    				<span class="glyphicon glyphicon-paperclip"></span>
+    				<span class="glyphicon glyphicon-volume-up"></span>
+    				<span class="glyphicon glyphicon-map-marker"></span>
+      		</div>
+      	</div>
+        <div class="row-fluid">
+            <div class="col-md-12">
+              <img id="display_image"/>
+              <!--video id="display_video" controls></video-->
+            </div>
+        </div>
+      	<div class="row-fluid">
+      		<div class="col-md-12">
+      			<br/>
+      			<fieldset>
+      				<legend>Categorias</legend>
+      				<ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+				        <li class="active"><a href="#tab_sugerencias" data-toggle="tab">Sugerencias</a></li>
+				        <li><a href="#tab_todas" data-toggle="tab">Todas</a></li>
+				    </ul>
+				    <div id="my-tab-content" class="tab-content">
+				        <div class="tab-pane active" id="tab_sugerencias">
+				            <p>
+				            	<div class="btn-group mobileFirst_xs" data-toggle="buttons" style="margin-left:20px;">
+      								  <label class="btn btn-primary">
+      								    <input type="checkbox" name="options" id="option1"> Ropa
+      								  </label>
+      								  <label class="btn btn-primary">
+      								    <input type="checkbox" name="options" id="option2"> Pantalón
+      								  </label>
+      								  <label class="btn btn-primary">
+      								    <input type="checkbox" name="options" id="option3"> Finanzas
+      								  </label>
+      								  <label class="btn btn-primary">
+      								    <input type="checkbox" name="options" id="option3"> Bogotá
+      								  </label>
+      								</div>	
+				            </p>
+				        </div>
+				        <div class="tab-pane" id="tab_todas" >
+				            <p>
+				            	<div class="btn-group mobileFirst_xs" data-toggle="buttons" style="margin-left:20px;">
+      								  <label class="btn btn-primary">
+      								    <input type="checkbox" name="options" id="option1"> Ropa
+      								  </label>
+      								  <label class="btn btn-primary">
+      								    <input type="checkbox" name="options" id="option2"> Pantalón
+      								  </label>
+      								  <label class="btn btn-primary">
+      								    <input type="checkbox" name="options" id="option3"> Finanzas
+      								  </label>
+      								  <label class="btn btn-primary">
+      								    <input type="checkbox" name="options" id="option3"> Bogotá
+      								  </label>
+      								</div>	
+				            </p>
+				        </div>
+				    </div>
+      			</fieldset>
+
+      		</div>
+          <div class="row-fluid">
+            <div id="images"></div>
+          </div>
+      	</div>
+
+
+        <input id="envia_tip" type="submit" value="Tip">
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2014</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
