@@ -1,0 +1,770 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="icon/axon.ico">
+
+    <title>TipToc - Demanda</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar" style="background-color:lightskyblue"></span>
+            <span class="icon-bar" style="background-color:lightskyblue"></span>
+            <span class="icon-bar" style="background-color:lightskyblue"></span>
+          </button>
+          <!--a class="navbar-brand" href="index.html" style="font-size:12px; font-weight:bold"><<  Mis Tocs</a-->
+            <a href="index.html" >
+              <img src="images/Axon.png" alt="..." class="img-rounded" style="width:32px; margin-top:10px; margin-left:5px;">
+            </a>
+            <a href="http://twitter.com/drcarvajalme" class="btn btn-default btn-sm" role="button"style="margin-top:10px; margin-left: 5px; background-color:inherit; color:white;border-color:#333" data-toggle="tooltip" data-placement="left" title="Nuevo Tip">
+              <span class="glyphicon glyphicon-pushpin" style="color:lightskyblue"></span>
+            </a>
+            <a href="http://twitter.com/drcarvajalme" class="btn btn-default btn-sm" role="button"style="margin-top:10px; background-color:inherit; color:white; border-color:#333" data-toggle="tooltip" data-placement="left" title="Buscar..">
+              <span class="glyphicon glyphicon-search" style="color:lightskyblue"></span>
+            </a>
+        </div>
+        <div class="navbar-collapse collapse" >
+          <div class= "visible-xs ">
+            <div class="panel-group" id="accordion">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <!--span class="glyphicon glyphicon-transfer"></span-->
+                    <img src="images/axon.png" alt="..." class="img-rounded" style="width:24px;">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" >
+                      Demanda & Oferta
+                    </a>
+                    <span class="badge pull-right">126</span> 
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <ul class="nav nav-pills nav-stacked">
+                      <li >
+                        <a href="index.html">
+                         <span class="glyphicon glyphicon-pushpin"></span> 
+                         <span class="badge pull-right">42</span>
+                         <span style="margin-left: 15px;"> Mis Tips (Demanda)</span> 
+                        </a>
+                      </li>
+                      <li>
+                        <a href="mistocs.html">
+                         <span class="glyphicon glyphicon-flag"></span>
+                         <span class="badge pull-right">42</span> 
+                         <span style="margin-left: 15px;"> Mis Tocs (Oferta)</span> 
+                        </a>
+                      </li>
+                      <li class="divider"></li>
+                      <li>
+                        <a href="#">
+                         <span class="glyphicon glyphicon-pencil"></span>
+                         <span class="badge pull-right">42</span> 
+                         <span style="margin-left: 15px;"> Borrador</span> 
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <span class="glyphicon glyphicon-user" style="color:skyblue"></span> 
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" style="margin-left: 15px;">
+                      Cuenta
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <ul class="nav nav-pills nav-stacked">
+                       <li>
+                        <a href="#">
+                         <span class="glyphicon glyphicon-user"></span> 
+                         <span style="margin-left: 15px;">Perfil</span> 
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                         <span class="glyphicon glyphicon-lock"></span> 
+                         <span style="margin-left: 15px;"> Privacidad</span> 
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <span class="glyphicon glyphicon-cog" style="color:lightskyblue"></span>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" style="margin-left: 15px;">
+                      Configuración
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <ul class="nav nav-pills nav-stacked">
+                       <li>
+                        <a href="#">
+                         <span class="glyphicon glyphicon-tasks"></span> 
+                         <span style="margin-left: 15px;"> Opciones</span> 
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                         <span class="glyphicon glyphicon-question-sign"></span> 
+                         <span style="margin-left: 15px;"> Ayuda</span> 
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                         <span class="glyphicon glyphicon-info-sign"></span> 
+                         <span style="margin-left: 15px;"> Acerca de</span> 
+                        </a>
+                      </li>
+                      <li class="divider"></li>
+                      <li>
+                        <a href="#">
+                         <span class="glyphicon glyphicon-share"></span> 
+                         <span style="margin-left: 15px;"> Compartir</span> 
+                        </a>
+                      </li>
+                    </ul> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!--/.visible-xs --> 
+          <div class=" visible-sm visible-md visible-lg">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" >
+                  <img src="images/axon.png" alt="..." class="img-rounded" style="width:24px; background-color:#222">
+                  <!--span class="glyphicon glyphicon-transfer"></span--> 
+                  <span class="badge pull-right">87</span>
+                  Demanda & Oferta
+                  <b class="caret" style="margin-right=5px;"></b></a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="drop1" >
+                  <li role="presentation">
+                     <a role="menuitem" tabindex="-1" href="index.html">
+
+                      <span class="glyphicon glyphicon-pushpin" ></span> 
+                       Mis Tips (Demanda)
+                       <span class="badge pull-right">42</span>
+                     </a>
+                  </li>
+                  <li role="presentation">
+                     <a role="menuitem" tabindex="-1" href="mistocs.html">
+                      <span class="glyphicon glyphicon-flag"></span> 
+                      <span class="badge pull-right">42</span>
+                       Mis Tocs (Oferta)
+                     </a>
+                  </li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation">
+                     <a role="menuitem" tabindex="-1" href="http://twitter.com/drcarvajalme">
+                      <span class="glyphicon glyphicon-pencil"></span> 
+                      <span class="badge pull-right">3</span>
+                       Borrador
+                     </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon    glyphicon-user" style="color:lightskyblue"></span> Cuenta <b class="caret"></b></a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                  <li role="presentation">
+                     <a role="menuitem" tabindex="-1" href="http://twitter.com/drcarvajalme">
+                       <span class="badge pull-right" style="background-color:white"><span style="color:black">></span></span>
+                       <span class="glyphicon glyphicon-user"></span>
+                        Perfil 
+                      </a>
+                  </li>
+                  <li role="presentation">
+                     <a role="menuitem" tabindex="-1" href="http://twitter.com/drcarvajalme">
+                       <span class="badge pull-right" style="background-color:white"><span style="color:black">></span></span>
+                       <span class="glyphicon glyphicon-lock"></span> 
+                       Privacidad 
+                     </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon    glyphicon-cog" style="color:lightskyblue"></span> Configuración<b class="caret"></b></a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                  <li role="presentation">
+                     <a role="menuitem" tabindex="-1" href="http://twitter.com/drcarvajalme">
+                       <span class="badge pull-right" style="background-color:white"><span style="color:black">></span></span>
+                       <span class="glyphicon glyphicon-tasks"></span>
+                        Opciones 
+                      </a>
+                  </li>
+                  <li role="presentation">
+                     <a role="menuitem" tabindex="-1" href="http://twitter.com/drcarvajalme">
+                       <span class="badge pull-right" style="background-color:white"><span style="color:black">></span></span>
+                       <span class="glyphicon glyphicon-question-sign"></span>
+                         Ayuda 
+                      </a>
+                  </li>
+                  <li role="presentation">
+                     <a role="menuitem" tabindex="-1" href="http://twitter.com/drcarvajalme">
+                       <span class="badge pull-right" style="background-color:white"><span style="color:black">></span></span>
+                       <span class="glyphicon glyphicon-info-sign"></span> 
+                         Acerca de
+                     </a>
+                  </li>
+                  <li class="divider"></li>
+                  <li role="presentation">
+                     <a role="menuitem" tabindex="-1" href="http://twitter.com/drcarvajalme">
+                       <span class="badge pull-right" style="background-color:white"><span style="color:black">></span></span>
+                       <span class="glyphicon glyphicon-share"></span> 
+                         Compartir 
+                     </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.visible-md -->
+        </div><!--/.navbar-collapse -->   
+      </div>
+    </div>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    
+    <div class="container" style="margin-top:10px;">
+      
+      <div class="panel-group" id="accordion" style="margin:0px" >
+        <div class="panel panel-default" style="border-color:white;">
+          <div class="panel-heading" style="background-color: white; padding:0px; ">
+            <h4 class="panel-title" style="font-weight:bold">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseHead">
+                Mis Tips (Demanda)
+              </a>
+            </h4>
+          </div>
+        <div id="collapseHead" class="panel-collapse collapse">
+          <div class="panel-body">
+            Aquí encontrarás el listado de solicitudes que has enviado a otras personas, y para cada una de ellas encontrarás las respuestas que has recibido.
+          </div>
+        </div>
+       </div>
+      </div>
+      <div class="panel-group" id="accordion2">
+        <div class="panel panel-default">
+          <div class="panel-heading" style="background-color: gold;">
+            <h6 class="panel-title">
+              <span class="badge pull-right" >
+                3
+              </span>
+              <div style="text-align:right;">
+                <a href="http://twitter.com/drcarvajalme" data-toggle="tooltip" data-placement="right" title="Adjuntos">
+                 <span class="badge pull-right" style="background-color:inherit; color:black"> 
+                  <span class="glyphicon glyphicon-paperclip" style="display:inline-block"></span> 
+                  18 Abril 2014  
+                </span>
+                <a href="map.html" data-toggle="tooltip" data-placement="right" title="Vista mapa" >
+                  <span class="glyphicon glyphicon-globe" ></span>
+                </a>
+              </div>
+              <a data-toggle="collapse" data-parent="#accordion2" href="#collapse10" >
+                Necesito unos pantalones azules con bolsillo cuadrado, bota angosta y que sea muy barato
+              </a>
+              <p style="font-size:small ; font-style: italic;">
+                Ropa, Pantalones, Deporte
+              </p>
+            </h6>
+          </div>
+          <div id="collapse10" class="panel-collapse collapse">
+             <div class="panel-body">
+              <ul class="media-list">
+                <li class="media">
+                  <a class="pull-left" href="#">
+                    <img class="media-object" src="images\Migue (2).jpg" alt="Migue" width=32px>
+                  </a>
+                  <div class="media-body">
+                    <h6 class="media-heading">
+                      <div>
+                      Que me pongo
+                      <a href="http://twitter.com/drcarvajalme" data-toggle="tooltip" data-placement="right" title="Adjuntos">
+                        <span class="badge pull-right" style="background-color:inherit; color:black">
+                          <span class="glyphicon glyphicon-paperclip" style="display:inline-block"></span> 
+                          18 Abril 2014  5:45 pm
+                        </span>
+                      </a>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      </div>
+                    </h6>
+                    Todo lo que necesitas aqui lo tenemos
+                  </div>
+                </li>
+                <li class="media">
+                  <a class="pull-left" href="#">
+                    <img class="media-object" src="images\Axon40.png" alt="Migue" width=32px>
+                  </a>
+                  <div class="media-body">
+                    <h6 class="media-heading">
+                      <div>
+                      Levi´s Store 127
+                        <span class="badge pull-right" style="background-color:inherit; color:black">
+                          19 Abril 2014  9:23 am
+                        </span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      </div>
+                    </h6>
+                    Somos la mejor elección para comprar ropa deportiva
+                  </div>
+                </li>
+                <li class="media">
+                  <a class="pull-left" href="#">
+                    <img class="media-object" src="images\cerebrum.jpg" alt="Cerebrum" width=32px>
+                  </a>
+                  <div class="media-body">
+                    <h6 class="media-heading">
+                      <div>
+                      Daniela´s Boutique
+                      <a href="http://twitter.com/drcarvajalme" data-toggle="tooltip" data-placement="right" title="Adjuntos">
+                        <span class="badge pull-right" style="background-color:inherit; color:black">
+                          <span class="glyphicon glyphicon-paperclip" style="display:inline-block"></span> 
+                          19 Abril 2014  10:22 pm
+                        </span>
+                      </a>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      </div>
+                    </h6>
+                    Imponemos la moda y marcamos tendencias
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" style="background-color: gold;">
+            <h6 class="panel-title">
+              <span class="badge pull-right" >
+                3
+              </span>
+              <div style="text-align:right;">
+                <a href="http://twitter.com/drcarvajalme" data-toggle="tooltip" data-placement="right" title="Adjuntos">
+                 <span class="badge pull-right" style="background-color:inherit; color:black"> 
+                  <span class="glyphicon glyphicon-paperclip" style="display:inline-block"></span> 
+                  18 Abril 2014  
+                </span>
+                <a href="http://twitter.com/drcarvajalme" data-toggle="tooltip" data-placement="right" title="Vista mapa" >
+                  <span class="glyphicon glyphicon-globe" ></span>
+                </a>
+              </div>
+              <a data-toggle="collapse" data-parent="#accordion2" href="#collapse11" >
+                Necesito unos pantalones azules con bolsillo cuadrado, bota angosta y que sea muy barato
+              </a>
+              <p style="font-size:small ; font-style: italic;">
+                Ropa, Pantalones, Deporte
+              </p>
+            </h6>
+          </div>
+          <div id="collapse11" class="panel-collapse collapse ">
+             <div class="panel-body">
+              <ul class="media-list">
+                <li class="media">
+                  <a class="pull-left" href="#">
+                    <img class="media-object" src="images\Migue (2).jpg" alt="Migue" width=32px>
+                  </a>
+                  <div class="media-body">
+                    <h6 class="media-heading">
+                      <div>
+                      Que me pongo
+                      <a href="http://twitter.com/drcarvajalme" data-toggle="tooltip" data-placement="right" title="Adjuntos">
+                        <span class="badge pull-right" style="background-color:inherit; color:black">
+                          <span class="glyphicon glyphicon-paperclip" style="display:inline-block"></span> 
+                          18 Abril 2014  5:45 pm
+                        </span>
+                      </a>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      </div>
+                    </h6>
+                    Todo lo que necesitas aqui lo tenemos
+                  </div>
+                </li>
+                <li class="media">
+                  <a class="pull-left" href="#">
+                    <img class="media-object" src="images\Axon40.png" alt="Migue" width=32px>
+                  </a>
+                  <div class="media-body">
+                    <h6 class="media-heading">
+                      <div>
+                      Levi´s Store 127
+                        <span class="badge pull-right" style="background-color:inherit; color:black">
+                          19 Abril 2014  9:23 am
+                        </span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      </div>
+                    </h6>
+                    Somos la mejor elección para comprar ropa deportiva
+                  </div>
+                </li>
+                <li class="media">
+                  <a class="pull-left" href="#">
+                    <img class="media-object" src="images\cerebrum.jpg" alt="Cerebrum" width=32px>
+                  </a>
+                  <div class="media-body">
+                    <h6 class="media-heading">
+                      <div>
+                      Daniela´s Boutique
+                      <a href="http://twitter.com/drcarvajalme" data-toggle="tooltip" data-placement="right" title="Adjuntos">
+                        <span class="badge pull-right" style="background-color:inherit; color:black">
+                          <span class="glyphicon glyphicon-paperclip" style="display:inline-block"></span> 
+                          19 Abril 2014  10:22 pm
+                        </span>
+                      </a>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      </div>
+                    </h6>
+                    Imponemos la moda y marcamos tendencias
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" style="background-color: gold;">
+            <h6 class="panel-title">
+              <span class="badge pull-right" >
+                3
+              </span>
+              <div style="text-align:right;">
+                <a href="http://twitter.com/drcarvajalme" data-toggle="tooltip" data-placement="right" title="Adjuntos">
+                 <span class="badge pull-right" style="background-color:inherit; color:black"> 
+                  <span class="glyphicon glyphicon-paperclip" style="display:inline-block"></span> 
+                  18 Abril 2014  
+                </span>
+                <a href="http://twitter.com/drcarvajalme" data-toggle="tooltip" data-placement="right" title="Vista mapa" >
+                  <span class="glyphicon glyphicon-globe" ></span>
+                </a>
+              </div>
+              <a data-toggle="collapse" data-parent="#accordion2" href="#collapse12" >
+                Necesito unos pantalones azules con bolsillo cuadrado, bota angosta y que sea muy barato
+              </a>
+              <p style="font-size:small ; font-style: italic;">
+                Ropa, Pantalones, Deporte
+              </p>
+            </h6>
+          </div>
+          <div id="collapse12" class="panel-collapse collapse ">
+             <div class="panel-body">
+              <ul class="media-list">
+                <li class="media">
+                  <a class="pull-left" href="#">
+                    <img class="media-object" src="images\Migue (2).jpg" alt="Migue" width=32px>
+                  </a>
+                  <div class="media-body">
+                    <h6 class="media-heading">
+                      <div>
+                      Que me pongo
+                      <a href="http://twitter.com/drcarvajalme" data-toggle="tooltip" data-placement="right" title="Adjuntos">
+                        <span class="badge pull-right" style="background-color:inherit; color:black">
+                          <span class="glyphicon glyphicon-paperclip" style="display:inline-block"></span> 
+                          18 Abril 2014  5:45 pm
+                        </span>
+                      </a>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      </div>
+                    </h6>
+                    Todo lo que necesitas aqui lo tenemos
+                  </div>
+                </li>
+                <li class="media">
+                  <a class="pull-left" href="#">
+                    <img class="media-object" src="images\Axon40.png" alt="Migue" width=32px>
+                  </a>
+                  <div class="media-body">
+                    <h6 class="media-heading">
+                      <div>
+                      Levi´s Store 127
+                        <span class="badge pull-right" style="background-color:inherit; color:black">
+                          19 Abril 2014  9:23 am
+                        </span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      </div>
+                    </h6>
+                    Somos la mejor elección para comprar ropa deportiva
+                  </div>
+                </li>
+                <li class="media">
+                  <a class="pull-left" href="#">
+                    <img class="media-object" src="images\cerebrum.jpg" alt="Cerebrum" width=32px>
+                  </a>
+                  <div class="media-body">
+                    <h6 class="media-heading">
+                      <div>
+                      Daniela´s Boutique
+                      <a href="http://twitter.com/drcarvajalme" data-toggle="tooltip" data-placement="right" title="Adjuntos">
+                        <span class="badge pull-right" style="background-color:inherit; color:black">
+                          <span class="glyphicon glyphicon-paperclip" style="display:inline-block"></span> 
+                          19 Abril 2014  10:22 pm
+                        </span>
+                      </a>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      </div>
+                    </h6>
+                    Imponemos la moda y marcamos tendencias
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" style="background-color: gold;">
+            <h6 class="panel-title">
+              <span class="badge pull-right" >
+                3
+              </span>
+              <div style="text-align:right;">
+                <a href="http://twitter.com/drcarvajalme" data-toggle="tooltip" data-placement="right" title="Adjuntos">
+                 <span class="badge pull-right" style="background-color:inherit; color:black"> 
+                  <span class="glyphicon glyphicon-paperclip" style="display:inline-block"></span> 
+                  18 Abril 2014  
+                </span>
+                <a href="http://twitter.com/drcarvajalme" data-toggle="tooltip" data-placement="right" title="Vista mapa" >
+                  <span class="glyphicon glyphicon-globe" ></span>
+                </a>
+              </div>
+              <a data-toggle="collapse" data-parent="#accordion2" href="#collapse13" >
+                Necesito unos pantalones azules con bolsillo cuadrado, bota angosta y que sea muy barato
+              </a>
+              <p style="font-size:small ; font-style: italic;">
+                Ropa, Pantalones, Deporte
+              </p>
+            </h6>
+          </div>
+          <div id="collapse13" class="panel-collapse collapse ">
+             <div class="panel-body">
+              <ul class="media-list">
+                <li class="media">
+                  <a class="pull-left" href="#">
+                    <img class="media-object" src="images\Migue (2).jpg" alt="Migue" width=32px>
+                  </a>
+                  <div class="media-body">
+                    <h6 class="media-heading">
+                      <div>
+                      Que me pongo
+                      <a href="http://twitter.com/drcarvajalme" data-toggle="tooltip" data-placement="right" title="Adjuntos">
+                        <span class="badge pull-right" style="background-color:inherit; color:black">
+                          <span class="glyphicon glyphicon-paperclip" style="display:inline-block"></span> 
+                          18 Abril 2014  5:45 pm
+                        </span>
+                      </a>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      </div>
+                    </h6>
+                    Todo lo que necesitas aqui lo tenemos
+                  </div>
+                </li>
+                <li class="media">
+                  <a class="pull-left" href="#">
+                    <img class="media-object" src="images\Axon40.png" alt="Migue" width=32px>
+                  </a>
+                  <div class="media-body">
+                    <h6 class="media-heading">
+                      <div>
+                      Levi´s Store 127
+                        <span class="badge pull-right" style="background-color:inherit; color:black">
+                          19 Abril 2014  9:23 am
+                        </span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      </div>
+                    </h6>
+                    Somos la mejor elección para comprar ropa deportiva
+                  </div>
+                </li>
+                <li class="media">
+                  <a class="pull-left" href="#">
+                    <img class="media-object" src="images\cerebrum.jpg" alt="Cerebrum" width=32px>
+                  </a>
+                  <div class="media-body">
+                    <h6 class="media-heading">
+                      <div>
+                      Daniela´s Boutique
+                      <a href="http://twitter.com/drcarvajalme" data-toggle="tooltip" data-placement="right" title="Adjuntos">
+                        <span class="badge pull-right" style="background-color:inherit; color:black">
+                          <span class="glyphicon glyphicon-paperclip" style="display:inline-block"></span> 
+                          19 Abril 2014  10:22 pm
+                        </span>
+                      </a>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      </div>
+                    </h6>
+                    Imponemos la moda y marcamos tendencias
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" style="background-color: gold;">
+            <h6 class="panel-title">
+              <span class="badge pull-right" >
+                3
+              </span>
+              <div style="text-align:right;">
+                <a href="http://twitter.com/drcarvajalme" data-toggle="tooltip" data-placement="right" title="Adjuntos">
+                 <span class="badge pull-right" style="background-color:inherit; color:black"> 
+                  <span class="glyphicon glyphicon-paperclip" style="display:inline-block"></span> 
+                  18 Abril 2014  
+                </span>
+                <a href="http://twitter.com/drcarvajalme" data-toggle="tooltip" data-placement="right" title="Vista mapa" >
+                  <span class="glyphicon glyphicon-globe" ></span>
+                </a>
+              </div>
+              <a data-toggle="collapse" data-parent="#accordion2" href="#collapse14" >
+                Necesito unos pantalones azules con bolsillo cuadrado, bota angosta y que sea muy barato
+              </a>
+              <p style="font-size:small ; font-style: italic;">
+                Ropa, Pantalones, Deporte
+              </p>
+            </h6>
+          </div>
+          <div id="collapse14" class="panel-collapse collapse ">
+             <div class="panel-body">
+              <ul class="media-list">
+                <li class="media">
+                  <a class="pull-left" href="#">
+                    <img class="media-object" src="images\Migue (2).jpg" alt="Migue" width=32px>
+                  </a>
+                  <div class="media-body">
+                    <h6 class="media-heading" >
+                      <div>
+                        <span style="font-weight:bold">
+                          Que me pongo
+                        </span>
+                      <a href="http://twitter.com/drcarvajalme" data-toggle="tooltip" data-placement="right" title="Adjuntos">
+                        <span class="badge pull-right" style="background-color:inherit; color:black">
+                          <span class="glyphicon glyphicon-paperclip" style="display:inline-block"></span> 
+                          18 Abril 2014  5:45 pm
+                        </span>
+                      </a>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      </div>
+                    </h6>
+                    Todo lo que necesitas aqui lo tenemos
+                  </div>
+                </li>
+                <li class="media">
+                  <a class="pull-left" href="#">
+                    <img class="media-object" src="images\Axon40.png" alt="Migue" width=32px>
+                  </a>
+                  <div class="media-body">
+                    <h6 class="media-heading">
+                      <div>
+                      Levi´s Store 127
+                        <span class="badge pull-right" style="background-color:inherit; color:black">
+                          19 Abril 2014  9:23 am
+                        </span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      </div>
+                    </h6>
+                    Somos la mejor elección para comprar ropa deportiva
+                  </div>
+                </li>
+                <li class="media">
+                  <a class="pull-left" href="#">
+                    <img class="media-object" src="images\cerebrum.jpg" alt="Cerebrum" width=32px>
+                  </a>
+                  <div class="media-body">
+                    <h6 class="media-heading">
+                      <div>
+                      Daniela´s Boutique
+                      <a href="http://twitter.com/drcarvajalme" data-toggle="tooltip" data-placement="right" title="Adjuntos">
+                        <span class="badge pull-right" style="background-color:inherit; color:black">
+                          <span class="glyphicon glyphicon-paperclip" style="display:inline-block"></span> 
+                          19 Abril 2014  10:22 pm
+                        </span>
+                      </a>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      <span class="glyphicon glyphicon-star" style="display:inline-block"></span>
+                      </div>
+                    </h6>
+                    Imponemos la moda y marcamos tendencias
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <footer>
+        <p>&copy; Cerebrum 2014</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
